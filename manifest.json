@@ -1,0 +1,36 @@
+{
+    "name": "FBTOOLS|สายเทา",
+    "version": "0.1",
+    "manifest_version": 2,
+    "description": "GROUP Tools Facebook",
+    "background": {
+      "scripts": ["bg.js"]
+     
+    },
+    "browser_action": {
+      "default_icon": "1.png"
+    },
+  
+   
+    "web_accessible_resources": ["index.html"],
+    "host_permissions": [
+        "*://*.facebook.com/*"
+      ],
+    "permissions": [
+      "storage",
+      "*://*.facebook.com/*",
+      "tabs",
+      "http://*/",
+      "https://*/",
+      "webRequest",
+      "webRequestBlocking",
+      "cookies"
+    ],
+	"icons": {
+    "16": "16.png",
+    "48": "48.png",
+    "128": "128.png"
+  },
+    "content_security_policy": "script-src 'self'  'unsafe-eval' object-src 'self' https://cdn.jsdelivr.net https://maxcdn.bootstrapcdn.com https://cdnjs.cloudflare.com https://cdn.datatables.net  https://cdn.tailwindcss.com https://use.fontawesome.com;"
+  }
+  
